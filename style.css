@@ -11,15 +11,36 @@
 
 }
 .main .box{
-    height: 83vh;
+    height: 80vh;
     opacity: 0.45;
     width: 100vw;
     background-color: black;
 }
 nav{
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 65px;
+   
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
