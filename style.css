@@ -116,6 +116,14 @@ input{
     border: none;
     margin: 10px;
     font-weight: 500;
+    color:white
+}
+input:focus{
+    border: none;
+    outline: none;
+    & .emailbox{
+        border: 1px solid white;
+    }
 }
 
 .midbox{
