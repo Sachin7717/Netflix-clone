@@ -147,10 +147,13 @@ p{
     margin-left: 10px;
     font-size: 14px;
     margin-top: 6px;
+    color: rgb(133, 130, 130);
 }
 
 .hide{
     display: none;
 }
+
+
 
 
