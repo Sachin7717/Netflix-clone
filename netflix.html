@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="background"></div>
+    <div class="backgradient"></div>
     <div class="main">
         <nav>
             <img src="img/logo.svg" width="75" height="30">
             <div>
-                <button>English</button>
-                <button>sign in</button>
+                <button id="english">
+                    <select name="lang" id="lang">
+                                <option value="eng">English</option>
+                                <option value="hi">Hindi</option>
+                    </select>
+                </button>
+                <button id="signin">sign in</button>
             </div>
         </nav>
         <div class="hero">
             <span>Unlimited movies, TV shows and more</span>
             <span>Watch anywhere. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="midbox">
+                <div class="emailbox">
+                <input type="text" placeholder="Email address"></div>
+                <button id="get_started">Get Started ></button>
+            </div>
         </div>
-        <div class="midbox">
-            <input type="text" placeholder="Email address">
-            <button style="color: white;">Get Started</button>
-        </div>
+
         <div class="box"></div>
     </div>
 </body>
+
 </html>
