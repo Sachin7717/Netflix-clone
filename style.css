@@ -1,50 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
-* {
+*{
     margin: 0%;
     padding: 0%;
+    overflow: hidden;
 }
 
-.main {
+
+.background{
+    height: 100vh;
+    width: 100vw;
     background-image: url("/img/bg.jpg");
-    height: 88vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main{
+    height: 100vh; 
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1350px, 100vw);
-
+    background-size: max(1350px,100vw);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0, rgba(0, 0, 0, 0.484) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 
-.main .box {
+
+.main .box{
     height: 80vh;
     opacity: 0.45;
     width: 100vw;
     background-color: black;
 }
-
-nav {
+nav{
     width: 70vw;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 65px;
-
+   
 }
-
-nav img {
+nav img{
     color: red;
     width: 114px;
     position: relative;
     z-index: 10;
 }
-
-nav button {
+nav button{
     position: relative;
     z-index: 10;
+    border: none;
+    border-radius: 4px;
+}
+#get_started{
+    background-color: red;
+    color: white;
+    padding: 16px 50px 16px 50px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px;
+    position: relative;
+    z-index: 10;
+    border: none;
+    border-radius: 4px;
+}
+select{
+    height: 100%;
+    width: 100%;
+    padding: 8px 20px 8px 20px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+#signin{
+    background-color: red;
+    color: white;
+    padding: 8px 20px 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px;
 }
 
 .hero {
-    font-family: "Martel Sans", sans-serif;
+    font-family: "Netflix sans", sans-serif;
     align-items: center;
     justify-content: center;
     color: white;
@@ -52,9 +92,9 @@ nav button {
     display: flex;
     flex-direction: column;
     position: relative;
+    top: -20px;
     gap: 25px;
 }
-
 .hero> :first-child {
     font-size: 48px;
     font-weight: 900;
@@ -69,3 +109,28 @@ nav button {
     font-size: 20px;
     font-weight: 400;
 }
+
+input{
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.midbox{
+    display: flex;
+}
+.emailbox{
+    height: 55px;
+    width:360px;
+    background-color: rgba(0, 0, 0, 0.495);
+    position: relative;
+    top: 10px;
+    display: flex;
+    border-radius:4px ;
+    border: 1px solid rgb(66, 63, 63);
+    
+}
+
+
