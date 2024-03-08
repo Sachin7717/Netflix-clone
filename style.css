@@ -171,3 +171,14 @@ p{
     border-radius: 13px;
 
 }
+.movie{
+    display: flex;
+    flex-direction: row;
+}
+.movbox {
+    height: 100px;
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 3px;
+    
+}
